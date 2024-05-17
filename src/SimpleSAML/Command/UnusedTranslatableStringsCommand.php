@@ -49,6 +49,7 @@ class UnusedTranslatableStringsCommand extends Command
         );
 
         $this->setDescription('Generates a list of translations that are no longer in used in PHP or Twig files');
+        $this->setName('translations:unused');
         $this->addOption(
             'module',
             null,

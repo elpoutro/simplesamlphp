@@ -35,6 +35,7 @@ class UpdateBinaryTranslationsCommand extends Command
     protected function configure(): void
     {
         $this->setDescription('Generates fresh .mo translation files based on the current .po files');
+        $this->setName('translations:update:binary');
         $this->addOption(
             'module',
             null,

@@ -56,6 +56,7 @@ class UpdateTranslatableStringsCommand extends Command
         $this->setDescription(
             'Generates fresh .po translation files based on the translatable strings from PHP and Twig files',
         );
+        $this->setName('translations:update:translatable');
         $this->addOption(
             'module',
             null,
